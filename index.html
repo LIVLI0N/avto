@@ -22,5 +22,18 @@
   <div id="kom"></div>
   <textarea id="pismo">Пиши</textarea><br>
   <button id="knopka">Отправить</button>
+  <script>
+    let block = document.getElementById("kom");
+    let kn = document.getElementById("knopka");
+    let send = document.getElementById("pismo");
+    kn.addEventListener("click", ()=>{
+      let a = send.value;
+      let komm = document.createElement("hr");
+      block.appendChild(komm);
+      let kommrxr = document.createElement("h1");
+      kommtxt.innerText = a;
+      block.appendChild(kpmmtxt);
+    })
+  </script>
 </body>
 </html>
